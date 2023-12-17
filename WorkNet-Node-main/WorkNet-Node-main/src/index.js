@@ -1,0 +1,14 @@
+const express = require("express");
+const cors = require("cors");
+const bodyparser = require("body-parser");
+const { PORT } = require("./config/index");
+const authController = require("./controllers/auth.contoller");
+const workerController = require("./controllers/worker.controller");
+const mongoose = require("./config/mongoose");
+let worknet = express();
+worknet.use(cors());
+worknet.use(bodyparser.json());
+worknet.use(bodyparser.urlencoded({ extended: false }));
+worknet.use("/auth", authController);
+worknet.use("/worker", workerController);
+worknet.listen(PORT, () => { console.log(`The app is running in ${ PORT }`) });

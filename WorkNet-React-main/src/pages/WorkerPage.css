@@ -1,0 +1,34 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #0000003b;
+    text-align: left;
+    padding: 8px;
+     
+}
+
+
+/* tr:nth-child(odd) {
+    background-color: #9B7D7D;
+} */
+th{
+    background-color: #9B7D7D
+}
+.workerType_field ,
+.location_field{
+    height: 50px;
+    width: 200px;
+    padding: 5px;   
+}
+.filter{
+    background-color: #9B7D7D;
+    border-radius: 3px;
+    padding: 12px 24px;
+    color:#000;  
+
+}

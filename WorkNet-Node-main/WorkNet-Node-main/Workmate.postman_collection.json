@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "15147f3a-bdb3-48ca-8e19-b8a2f4b13dbe",
+		"name": "Workmate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17195439"
+	},
+	"item": [
+		{
+			"name": "Add Employer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"emp1\",\n    \"mobile_number\": \"1111\",\n    \"password\": \"emp1\",\n    \"email\": \"emp1@gmail.com\",\n    \"aadhar_id\": \"1111\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6969/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"work1\",\n    \"mobile_number\": \"1111\",\n    \"password\": \"work1\",\n    \"aadhar_id\": \"1111\",\n    \"location\": \"bihar\",\n    \"type_of_worker\": \"worktype\",\n    \"gender\": \"M\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6969/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"1111\",\n    \"password\": \"emp1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6969/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Worker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6969/worker/work/w/location/null",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6969",
+					"path": [
+						"worker",
+						"work",
+						"w",
+						"location",
+						"null"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
